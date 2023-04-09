@@ -260,14 +260,3 @@ window.onload = function () {
   loop();
   setInterval(loop, 1000 / 60);
 };
-
-const circle = document.querySelector('.circle');
-
-document.addEventListener('mousemove', function(e) {
-  let red = Math.floor(Math.random() * 256);
-  let green = Math.floor(Math.random() * 256);
-  let blue = Math.floor(Math.random() * 256);
-  circle.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-  circle.style.left = e.pageX + 'px';
-  circle.style.top = e.pageY + 'px';
-});
